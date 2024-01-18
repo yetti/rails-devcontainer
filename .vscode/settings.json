@@ -1,0 +1,5 @@
+{
+  "dotfiles.repository": "yetti/dotfiles",
+  "dotfiles.targetPath": "~/dotfiles",
+  "dotfiles.installCommand": "setup.sh"
+}
