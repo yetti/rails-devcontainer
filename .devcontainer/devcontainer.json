@@ -1,5 +1,5 @@
 {
-  "name": "MyApp",
+  "name": "My App",
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "workspaceFolder": "/workspace",
@@ -18,7 +18,12 @@
         "misogi.ruby-rubocop",
         "KoichiSasada.vscode-rdbg",
         "eamodio.gitlens",
-        "vinirossa.vscode-gitandgithub-pack"
+        "vinirossa.vscode-gitandgithub-pack",
+        "ms-vscode.live-server",
+        "ninoseki.vscode-mogami",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "mhutchie.git-graph"
       ]
     }
   },
@@ -33,6 +38,7 @@
   },
   "forwardPorts": [
     3000,
-    5432
+    3306,
+    1080
   ]
 }
