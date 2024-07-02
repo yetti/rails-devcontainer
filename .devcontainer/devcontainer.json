@@ -4,9 +4,7 @@
   "service": "app",
   "workspaceFolder": "/workspace",
   "remoteEnv": {
-    "PATH": "/workspace/bin:${containerEnv:PATH}",
-    "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}",
-    "GITHUB_USER": "${localEnv:GITHUB_USER}"
+    "PATH": "/workspace/bin:${containerEnv:PATH}"
   },
   "customizations": {
     "vscode": {
@@ -23,22 +21,26 @@
         "ninoseki.vscode-mogami",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "mhutchie.git-graph"
+        "mhutchie.git-graph",
+        "connorshea.vscode-ruby-test-adapter",
+        "MateuszDrewniak.ruby-test-runner",
+        "davidpallinder.rails-test-runner",
+        "oderwat.indent-rainbow"
       ]
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": true,
-      "configureZshAsDefaultShell": true,
-      "installOhMyZsh": false,
-      "installOhMyZshConfig": false,
-      "upgradePackages": true
-    }
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
   "forwardPorts": [
     3000,
-    3306,
-    1080
-  ]
+    5432,
+    6080
+  ],
+  "portsAttributes": {
+    "6080": {
+      "label": "desktop"
+    }
+  }
 }

@@ -6,8 +6,10 @@ FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim-bookworm
 
 # Install packages needed to build gems and node modules
 RUN apt-get update -qq && \
+  export DEBIAN_FRONTEND=noninteractive && \
   apt-get install --no-install-recommends -y apt-utils build-essential curl git libpq-dev libvips node-gyp pkg-config python-is-python3 \
   iproute2 openssh-client postgresql-client vim libjemalloc2 gnupg2 direnv fzy \
+  firefox-esr \
   && apt-get clean
 
 # Install JavaScript dependencies
