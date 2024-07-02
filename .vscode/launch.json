@@ -16,6 +16,24 @@
       "type": "rdbg",
       "name": "Attach with rdbg",
       "request": "attach"
+    },
+    {
+      "type": "rdbg",
+      "name": "Debug test file with rdbg",
+      "request": "launch",
+      "script": "${env:GEM_HOME}/bin/rspec",
+      "args": [
+        "${file}"
+      ]
+    },
+    {
+      "type": "rdbg",
+      "name": "Debug test at line with rdbg",
+      "request": "launch",
+      "script": "${env:GEM_HOME}/bin/rspec",
+      "args": [
+        "${file}:${lineNumber}"
+      ]
     }
   ]
 }
