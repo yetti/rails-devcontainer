@@ -25,7 +25,10 @@
         "connorshea.vscode-ruby-test-adapter",
         "MateuszDrewniak.ruby-test-runner",
         "davidpallinder.rails-test-runner",
-        "oderwat.indent-rainbow"
+        "oderwat.indent-rainbow",
+        "aliariff.auto-add-brackets",
+        "benspaulding.procfile",
+        "redhat.vscode-yaml"
       ]
     }
   },
