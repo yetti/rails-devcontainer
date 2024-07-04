@@ -30,7 +30,13 @@
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "configureZshAsDefaultShell": true,
+      "installOhMyZsh": false,
+      "installOhMyZshConfig": false,
+      "upgradePackages": true
+    },
     "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
   "forwardPorts": [
